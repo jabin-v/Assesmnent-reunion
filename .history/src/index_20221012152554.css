@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: #E5E7EB; 
+  
+}
+
+.dropdown{
+  max-width:296px;
+
+}
+
+.dropdown-btn {
+  display:flex;
+  height:64px;
+  align-items:center;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-width: 1px; 
+  border-radius: 0.5rem; 
+
+}
