@@ -8,10 +8,15 @@ function App() {
   return (
   <div className='app'>
     <Header/>
-    <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/favourites' element={<Favourites />} />
-      </Routes>
+  
+      <div className='container'>
+      <Routes>
+      <Route path='/' element={<Home />} />
+       <Route path='/favourites' element={<Favourites />} />
+       </Routes>
+      </div>
+       
+     
   </div>
   );
 }

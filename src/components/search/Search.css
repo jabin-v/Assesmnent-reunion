@@ -1,0 +1,22 @@
+.search-selector{
+    padding:15px 30px;
+    max-width:1170px;
+    margin: auto;
+    /* background:red; */
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    /* gap:10px; */
+    
+}
+
+.search-selector-btn{
+    padding:5px 10px;
+    border:1px solid rgb(109 40 217);
+    border-radius:5px;
+    font-size:10px;
+    font-weight:600;
+    background:rgb(109 40 217);
+    cursor:pointer;
+    color:white;
+}

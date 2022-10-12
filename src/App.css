@@ -1,5 +1,12 @@
 .app{
   max-width:1440px;
   margin: auto;
+ 
 
+}
+.container{
+  max-width:1440px;
+  /* background:red; */
+  margin: auto;
+  max-width:1170px;
 }

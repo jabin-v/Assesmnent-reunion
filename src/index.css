@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  background-color: #E5E7EB; 
+  background-color: #EDF1FA ; 
+  font-family:poppins,serif;
+
+  
   
 }
 
@@ -31,7 +34,8 @@ body {
   font-size: 1.5rem;
   line-height: 2rem; 
   color: rgb(109 40 217);
-  margin-left: auto
+  margin-left: auto;
+  cursor:pointer;
 }
 .dropdown-menu{
  padding:8px 6px;
@@ -43,8 +47,26 @@ body {
  width:100%;
  z-index:10;
  list-style:none;
+ top:35px;
  
 
 
 
+}
+
+.icons{
+  font-size: 1.125rem;
+  line-height: 1.75rem; 
+  color: rgb(109 40 217);
+}
+
+.flex{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+
+.relative{
+  position:relative;
 }
