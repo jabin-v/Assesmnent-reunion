@@ -12,6 +12,7 @@ const PropertyDropdown = () => {
 
   const handlePropertyChange=(e)=>{
   dispatch(setProperty(e.target.value))
+  setIsOpen(false)
 
   }
 

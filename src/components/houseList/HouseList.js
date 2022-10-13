@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import House from '../house/House'
-import { housesData } from '../../data';
 import "./HouseList.css"
 import { setFilter } from '../../app/features/houses/houseSlice';
 
@@ -19,7 +18,7 @@ dispatch(setFilter(houses))
   const filter=useSelector((state)=>state.houses.filteredHouses)
 
 
-  console.log(filter)
+  console.log("out put is",filter)
 
 
   
@@ -27,7 +26,7 @@ dispatch(setFilter(houses))
     <div className='house-list'>
       
       {
-        filter?.map((house)=><House house={house} key={house.id}/>)
+        filter.length === 0 ? <p>Nothing to Display try changing filters</p> :filter?.map((house)=><House house={house} key={house.id}/>)
       }
       
 

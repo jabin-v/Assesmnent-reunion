@@ -6,8 +6,33 @@ import {BiArea} from "react-icons/bi"
 
 
 import "./House.css"
+import { useDispatch, useSelector } from 'react-redux'
+import { addToFavourite } from '../../app/features/houses/houseSlice'
 
-const House = ({house}) => {
+
+const House = ({house,fav}) => {
+    const favourites=useSelector((state)=>state.houses.favourites)
+
+    console.log(favourites)
+
+    const dispatch=useDispatch();
+     
+    let inMyList=false;
+    favourites.map((item)=>{
+        if(item.id ===house.id){
+            inMyList=true
+        }
+        
+    })
+
+
+    const handleFavourite=(data)=>{
+
+        dispatch(addToFavourite(data))
+
+        console.log(data)
+
+    }
 
   return (
     <div className='house-card'>
@@ -16,7 +41,7 @@ const House = ({house}) => {
             <div className='house-price'>
                 <div className='price'>$ {house.price} <span className='month'>/Month</span> </div>
 
-                <MdFavoriteBorder className='fav-icon'/>  
+               {!fav && <MdFavoriteBorder className={`${inMyList ? "fav-icon active-fav" :"fav-icon"}`} onClick={()=>handleFavourite(house)}/> } 
             </div>
             <span className='house-name'>{house.name}</span>
             <span className='house-address'>{house.address}</span>

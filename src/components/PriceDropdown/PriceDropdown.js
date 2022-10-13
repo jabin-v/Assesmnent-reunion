@@ -36,6 +36,7 @@ const PriceDropdown = () => {
   const handleCountrySelect=(e)=>{
 
     dispatch(setPrice(e.target.value))
+    setIsOpen(false)
   
 
   }

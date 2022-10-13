@@ -74,3 +74,8 @@
 .room-detail span{
     color:#b9c0c9;
 }
+
+.active-fav{
+    background:blue;
+    color:white;
+}

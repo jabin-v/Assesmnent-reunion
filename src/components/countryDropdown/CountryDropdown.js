@@ -12,6 +12,7 @@ const CountryDropdown = () => {
 
   const handleCountrySelect=(e)=>{
   dispatch(setCountry(e.target.value))
+  setIsOpen(false)
 
   }
 
