@@ -17,10 +17,6 @@ dispatch(setFilter(houses))
 
   const filter=useSelector((state)=>state.houses.filteredHouses)
 
-
-  console.log("out put is",filter)
-
-
   
   return (
     <div className='house-list'>
