@@ -13,7 +13,7 @@ import { addToFavourite } from '../../app/features/houses/houseSlice'
 const House = ({house,fav}) => {
     const favourites=useSelector((state)=>state.houses.favourites)
 
-    console.log(favourites)
+   
 
     const dispatch=useDispatch();
      
@@ -30,7 +30,6 @@ const House = ({house,fav}) => {
 
         dispatch(addToFavourite(data))
 
-        console.log(data)
 
     }
 
