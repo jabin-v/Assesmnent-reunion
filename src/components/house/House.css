@@ -1,0 +1,76 @@
+.house-card{
+    background:white;
+    max-width:360px;
+    cursor:pointer;
+    /* margin:0 auto; */
+    border-radius:10px;
+}
+
+.house-card img{
+    width:100%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+
+
+}
+.house-detail{
+    display:flex;
+    flex-direction:column;
+    padding:6px 15px 25px 15px;
+    gap:15px;
+}
+
+.house-price{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.price{
+    color:#0309a3;
+    font-weight:600;
+}
+.month{
+    font-size:13px;
+    color:#b9c0c9;
+}
+
+.fav-icon{
+    padding:5px;
+    color:rgb(109 40 217);
+    border:1px solid #C1C5D0;
+    border-radius:50px;
+    font-size:10px;
+}
+.fav-icon:hover{
+    color:white;
+    background:rgb(109 40 217);
+    
+}
+.room-detail-wrapper{
+    display:flex;
+    justify-content:space-between;
+    border-top:1px solid #cfd1d4;
+    margin-top:10px;
+    padding-top:8px;
+}
+.house-address{
+    font-size:13px;
+    color:#b9c0c9;
+    
+}
+.house-name{
+    font-weight:600;
+
+}
+
+.room-bedroom{
+    font-size:10px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+}
+
+.room-detail span{
+    color:#b9c0c9;
+}
